@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="BrowserName" value="chrome"/>
+  <test thread-count="5" name="Parameters Testing(failed)">
+    <parameter name="BrowserName" value="chrome"/>
+    <parameter name="UserName" value="demo"/>
+    <parameter name="Passcode" value="PASSWORD"/>
+    <classes>
+      <class name="com.SeleniumTopics.TestNg.TestngParamters">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="FillLoginForm"/>
+        </methods>
+      </class> <!-- com.SeleniumTopics.TestNg.TestngParamters -->
+    </classes>
+  </test> <!-- Parameters Testing(failed) -->
+</suite> <!-- Failed suite [Suite] -->
